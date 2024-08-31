@@ -47,7 +47,7 @@ class ProductCrudController extends AbstractCrudController
                 ->setBasePath('/uploads')
                 ->setUploadDir('/public/uploads')
                 ->setRequired($required),
-            NumberField::new('price')->setLabel('Prix H.T')->setHelp("Prix H.T du produit sans le sigle £"),
+            NumberField::new('price')->setLabel('Prix H.T')->setHelp("Prix H.T du produit sans le sigle €"),
             ChoiceField::new('tva')->setLabel('Taux de TVA')->setChoices([
                 '5,5%' => '5.5',
                 '10%' => '10',
